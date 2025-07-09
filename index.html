@@ -6,20 +6,39 @@
   <style>
     body {
       margin: 0;
-      padding: 0;
+      padding-bottom: 80px; /* フッター分の余白 */
     }
-    .fixed-image {
+    .fixed-footer {
       position: fixed;
       bottom: 0;
       left: 0;
       width: 100%;
+      background-color: white;
       z-index: 9999;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 10px 0;
+      box-shadow: 0 -2px 5px rgba(0,0,0,0.1);
+    }
+    .fixed-footer img {
+      height: 50px;
+      margin: 0 10px;
     }
   </style>
 </head>
 <body>
-  <a href="https://example.com" target="_blank">
-    <img class="fixed-image" src="https://your-image-url.com/image.png" alt="固定画像">
-  </a>
+
+  <!-- 必要ならメインコンテンツをここに追加 -->
+
+  <div class="fixed-footer">
+    <a href="https://github.com/koromochan62/001/blob/main/Googleplay.png?raw=true" target="_blank">
+      <img src="https://play.google.com/store/apps/details?id=com.linkle.mobile&pcampaignid=web_share" alt="Google Play">
+    </a>
+    <a href="https://github.com/koromochan62/001/blob/main/Appstore.png?raw=true" target="_blank">
+      <img src="https://apps.apple.com/jp/app/linkle-%E3%83%AA%E3%83%B3%E3%82%AF%E3%83%AB-%E4%BC%9D%E3%81%88%E3%82%8B-%E3%81%9D%E3%82%8C%E3%81%A0%E3%81%91%E3%81%A7%E5%AE%9F%E7%8F%BE/id6745336014" alt="App Store">
+    </a>
+  </div>
+
 </body>
 </html>
